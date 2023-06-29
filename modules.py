@@ -139,10 +139,10 @@ def log_data(log_id: str, user_input: str, output: str, action: str):
     # This function takes as input a pair of question and document to produce
     # a short summary to answer the question using the information in the document.
     form_data = {
-        'entry.1797379595': log_id,
-        'entry.2042516990': user_input,
-        'entry.419672080': output,
-        'entry.466296310': action
+        'entry.824492780': log_id,
+        'entry.1800058496': user_input,
+        'entry.602078405': output,
+        'entry.242548152': action
     }
     url = st.secrets.google_forms.link
     requests.post(url, data=form_data)
